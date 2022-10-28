@@ -11,42 +11,76 @@
     --footer-back: #2F303A;
     --footer-color-registr: rgba(255, 255, 255, 0.6);
     --btm-portf-back: #F5F4FA;
-    --secondary-bgr:#2F303A;
-    
+    --secondary-bgr:#2F303A;} 
 
-    
-} 
 body {
 font-family:var(--main-font-family);
 color: var(--main-padge-color);
 letter-spacing: 0.03em;
 background-color: var(--color-with) ;
 font-size: 14px;
-
+/* width: 1600px; */
 }
-ul {list-style: none;}
 
-
+ul {list-style: none;
+padding: 0;
+margin: 0;}
+h1,h2,h3,p {
+padding: 0;
+margin: 0;
+}
+.container {
+width: 1230px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+.section 
+{padding-top: 94px;
+padding-bottom: 94px;}
 /* header */
+.header-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
 
-   
+.header-logo {
+display: flex;
+}
+.header-logo .item {
+    margin-left: 50px;
+}
+.header-logo .item:first-child {
+    margin-left:0px;
+}
+
+
 .logo {
- font-family: var(--secondary-font-family);
- color: #000000;
+margin-right: 93px;
+font-family: var(--secondary-font-family);
+color: #000000;
 font-weight: 700;
 font-size: 26px;
 line-height: calc(31 / 26);
 text-decoration: none;
+display: inline;
 } 
+
 .blu {
 color: var(--color-btm-logo);
 font-family: var(--secondary-font-family);}
+
 .nav-link {
+    display: block;
     font-weight: 500;
     line-height: calc(16 / 14);
     text-decoration: none;
     color: var(--main-padge-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
     }
+
  .current {
  color:var(--active-color-btm);
  }
@@ -54,29 +88,49 @@ font-family: var(--secondary-font-family);}
 .nav-link:hover,
 .nav-link:focus 
 {color: var(--color-btm-logo);}
+
+.ul-regist {
+    display: flex;
+    margin-left: auto;
+}
+.ul-regist .item {
+    margin-left: 30px;
+}
+.ul-regist .item:first-child {
+    margin-left: 0px;}
+
 .regist {
     color: var(--secondary-padge-color);
     font-weight: 500;
     line-height: calc(16 / 14);
     text-decoration: none;
     font-style: normal;}
+
 .regist:hover,
 .regist:focus
 { color: var(--color-btm-logo);}
+
+
 
 /* main студія */
 
 .hero {
     text-align: center;
-    background-color:var(--secondary-bgr) ;
+    background-color:var(--secondary-bgr) 
+    ;
     }
 .hero-h {
     color: var(--color-with);
-        font-weight: 900;
-        font-size: 44px;
-        line-height: calc(60 / 44);
-        letter-spacing: 0.06em;
-        text-transform:uppercase;}
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform:uppercase;
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+     }
 
 /* Скрытый <h2 class="wigualy-hidden">Особливості</h2> 
 Скрытый <h1 class="wigualy-hidden">Портфоліо</h1>*/
@@ -92,13 +146,30 @@ font-family: var(--secondary-font-family);}
     align-items: center;
     cursor: pointer;
     color: var(--color-with);
-    background-color: var(--color-btm-logo);}
+    background-color: var(--color-btm-logo);
+    border-radius: 4px;
+    border:inherit;
+    padding: 10px 32px;}
 
 .hero-btm:hover,
 .hero-btm:focus {
     background-color: var(--active-color-btm);}
 
+/* .features-section {
+    margin-bottom: 94px;} */
+
+.features {
+    display: flex;
+}
+.features .item {
+    width: 270px;
+    margin-left: 30px;}
+
+.features .item:first-child {
+    margin-left: 0px;}
+
  .features-title {
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
@@ -106,32 +177,66 @@ font-family: var(--secondary-font-family);}
 .features-text {
     line-height: calc(24 / 14);
     color: var(--secondary-padge-color);}
+/* .wo-we-do 
+{margin-bottom: 94px;} */
+.section-title 
+
+{margin-bottom: 50px;}
+
+.title-img .item 
+{margin-left: 30px;}
+
+.title-img .item:first-child 
+{margin-left: 0px;}
+
+    .title-img 
+    {display: flex; }
+
 .section-title, .team {
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
 }
+/* .our-team 
+{margin-bottom: 94px;} */
+
+.team 
+{margin-bottom: 50px;}
+
+.team-cards 
+{display: flex;}
+
+.team-cards .iteam 
+{margin-left:30px;
+    width: 270px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;}
+
+.team-cards .iteam:first-child 
+{margin-left:0px;}
 
 .team-name {
+    margin-top:30px;
+    margin-bottom:10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
-    
-       
-}
+    }
 .team-profession {
     font-size: 16px;
     line-height: calc(19 / 16);
-    color: var(--secondary-padge-color);
+    color: var(--secondary-padge-color);}
 
     /* footer */
     
-    }
+    
 footer {
-    background-color: var(--footer-back);
-}
-   
+    background-color: var(--footer-back);}
+
  .footer-logo {
+    padding-top: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
     font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
@@ -142,9 +247,16 @@ footer {
         color: var(--color-with);
         line-height: calc(24 / 14);
         text-decoration: none;
-        font-style: normal;
+        font-style: normal;}
 
-    }
+ .adress-nav .iteam 
+ {margin-top: 9px;} 
+
+ .adress-nav .iteam:first-child 
+ { margin-top: 0px;}
+ .adress-nav 
+ {padding-bottom: 60px;}
+
 .footer-regis {
     line-height: calc(24 / 14);
     color: var(--footer-color-registr);
@@ -161,6 +273,24 @@ footer {
 
 /* main портфоліо */
 
+.filter-list
+{display: flex;
+justify-content: center;
+margin-bottom: 34px;}
+
+
+.filter-list .iteam
+{margin-left: 8px;}
+
+.filter-list .btm
+{padding: 6px 22px;
+border-radius: 4px;
+background: #F5F4FA;
+border-color: inherit;}
+
+.filter-list .iteam:first-child 
+{margin-left: 0px;}
+
 .btm {
     font-weight: 500;
     font-size: 16px;
@@ -172,8 +302,27 @@ footer {
 .btm:focus {
 background-color: var(--color-btm-logo);
 color: var(--color-with)}
-.portfolio-title {
 
+ .portfolio-cards
+ {display: flex;
+flex-wrap: wrap;
+}
+
+.portfolio-cards .item 
+{width: 370px;
+margin-right: 30px;
+margin-bottom: 30px;
+border-bottom: 1px solid #EEEEEE;}
+
+.portfolio-cards .item:nth-child(3n) {
+    margin-right: 0px;}
+
+.portfolio-cards .item:nth-child(1n+7) 
+{margin-bottom: 0px;}
+
+.portfolio-title {
+    margin-bottom: 4px;
+    margin-top: 20px;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;}
