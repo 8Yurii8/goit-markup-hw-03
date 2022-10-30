@@ -19,7 +19,6 @@ color: var(--main-padge-color);
 letter-spacing: 0.03em;
 background-color: var(--color-with) ;
 font-size: 14px;
-/* width: 1600px; */
 }
 
 ul {list-style: none;
@@ -30,7 +29,7 @@ padding: 0;
 margin: 0;
 }
 .container {
-width: 1230px;
+width: 1200px;
 margin: 0 auto;
 padding-left: 15px;
 padding-right: 15px;
@@ -39,11 +38,13 @@ padding-right: 15px;
 {padding-top: 94px;
 padding-bottom: 94px;}
 /* header */
+
+.header{
+border-bottom: 1px solid #ECECEC;}
+
 .header-nav {
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ECECEC;
-}
+    align-items: center;}
 
 .header-logo {
 display: flex;
@@ -115,6 +116,7 @@ font-family: var(--secondary-font-family);}
 /* main студія */
 
 .hero {
+    padding:200px 0px ;
     text-align: center;
     background-color:var(--secondary-bgr) 
     ;
@@ -216,12 +218,16 @@ border-radius: 0px 0px 4px 4px;}
 {margin-left:0px;}
 
 .team-name {
-    margin-top:30px;
     margin-bottom:10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     }
+.team-name-div 
+{padding: 30px 30px;
+text-align: center;
+background-color: var(--color-with);}
+
 .team-profession {
     font-size: 16px;
     line-height: calc(19 / 16);
