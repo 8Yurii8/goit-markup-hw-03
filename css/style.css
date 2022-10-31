@@ -142,7 +142,9 @@ font-family: var(--secondary-font-family);}
 /* Скрытый <h2 class="wigualy-hidden">Особливості</h2> 
 Скрытый <h1 class="wigualy-hidden">Портфоліо</h1>*/
 .wigualy-hidden {
-    visibility: hidden;}
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;}
 /* Скрытый <h2 class="wigualy-hidden">Особливості</h2> 
 Скрытый <h1 class="wigualy-hidden">Портфоліо</h1>*/
 
